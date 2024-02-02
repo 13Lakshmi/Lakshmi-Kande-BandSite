@@ -3,130 +3,260 @@
 @use "./partials/mixins" as *;
 
 
-*{
+* {
+    font-family: "AvenirNext LT Pro";
     box-sizing: border-box;
-}
-body{
     margin: 0;
+    padding: 0;
 }
-.header{
-    background-color: $teritarycolor;
-    
 
-    &__title{
-        color: $primarycolor;
-        text-align: center;
+.header {
+    background-color: $black;
+
+    &__image {
+        height: 1.25rem;
+        width: 7.5rem;
+        padding-left: 6rem;
+        padding-top: 0.6rem;
+        margin-bottom: 1.6rem;
+        font-weight: bold 700;
+        font-size: 1.3rem;
+        @include tablet{
+            padding-left: 3rem;
+            padding-top: 2rem;
+
+        }
     }
-    &__list{
-        list-style: none;
-        display:flex;
+
+    &__list {
+        display: flex;
+        flex-direction: row;
         justify-content: space-around;
-        margin: 0;
+        padding-bottom: 0.8rem;
 
     }
-    &__leftlink{
-        color:$primarycolor;
-        text-decoration: none;
-        border-bottom:2px solid $primarycolor;
-        padding-bottom: 1.1rem;
-        
-        
+
+    &__item {
+        color: $white;
+        font-size: 0.875rem;
+
     }
-    &__rightlink{
-        color:$secondarycolor;
-        text-decoration: none;
+
+    &__list {
+        list-style: none;
+        @include tablet{
+            display: block;
+            
+        }
+    }
+
+    // &__leftlink{
+
+    //     &--active{
+    //          border: 1rem solid $white;
+    //     }
+    // }
+    &__rightlink {
+        color: $mercury;
     }
 }
 
-.hero{
-    background-image:linear-gradient(rgba(50,50,50,0.8),rgba(50,50,50,0.8)),url("../assets/Images/hero-bio.jpg");
+.hero {
+    background-image: linear-gradient(rgba(50, 50, 50, 0.7), rgba(50, 50, 50, 0.7)), url("../assets/Images/hero-bio.jpg");
     background-size: cover;
     background-position: center;
     height: 20vh;
-    width :100%;
-
-
-   &__text{ 
-    color:$primarycolor;
-    padding-top: 5rem;
-    padding-left: 2rem;
-    margin:0;
-}
-}
-
-.main{
-    .heading{
-        font-size: 2rem;
-    }
-    // @include mobile{
-    //     padding-bottom : 0rem;
-    //     padding-top: 0.5rem;
-    // }
-    // @include tablet{
-    //     padding-top: 3rem;
-    //     padding-bottom:2.25rem;
-    // }
-    .picture{
-        height: 30vh;
-        width :100%;
-        opacity: 0.9;
-    }
-    .text{
-        font-size: 0.813rem;
-        line-height: 1.125rem;
-        font-weight: Demi 600 ;
+    width: 100%;
+    @include tablet{
+        height:40vh;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
     }
 
+
+    &__text {
+        color: $white;
+        padding-top: 4rem;
+        padding-left: 1rem;
+        margin: 0;
+        font-size: 1.46rem;
+        @include tablet{
+            padding-left:2rem;
+            padding-top:13rem;
+            font-size: 3.6rem;
+        }
+    }
 }
-.gallery{
-    &__subtitle{
-        font-size: 1.875rem;
-        line-height: 1.375rem;
+
+.main {
+    &__heading {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding: 1.5rem 1rem 0 1rem;
+        font-weight: Bold 700;
+        @include tablet{
+            margin-left: 1rem;
+            font-size: 2rem;
+        }
+    }
+
+
+    &__picture {
+        height: 23vh;
+        width: 100%;
+        opacity: 2;
+        background-size: cover;
+        padding: 0.5rem 1rem 1rem 1rem;
+        @include tablet{
+            width:85%;
+            height:40vh;
+            margin:1rem 0rem 1rem 4rem;
+            
+        }
+
+    }
+
+    &__quote {
+        font-size: 0.71rem;
+        line-height: 1.2rem;
         font-weight: Demi 600;
+        padding: 0 1rem 1rem 1rem;
+        @include tablet{
+            margin:0 4rem;
+            font-size: 1.2rem;
+        }
     }
-    &__image{
-        height: 30vh;
-        width :100%;
-        display: block;
+    &__first{
         margin-bottom: 1rem;
     }
+    &__second{
+        font-size: 1.1rem;
+    }
+
+    &__subheading {
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+        font-weight: Demi 600;
+        padding: 0 1rem 1rem 1rem;
+    }
+
+    &__description {
+        padding: 0 1rem 0 1rem;
+    }
+
+    &__top {
+        font-size: 0.846rem;
+        line-height: 1.125rem;
+        font-weight: Regular 400;
+    }
+
+    &__bottom {
+        margin-top: 1rem;
+        font-size: 0.84rem;
+        line-height: 1.125rem;
+        font-weight: Regular 400;
+    }
+}
+
+.gallery {
+    
+    &__subtitle {
+        font-size: 1.5rem;
+        line-height: 1rem;
+        font-weight: Bold 700;
+        padding:2rem 0 0.5rem 1rem;
+    }
+
+    &__image {
+        height: 23vh;
+        width: 100%;
+        background-position: cover;
+        padding: 0.5rem 1rem 0 1rem;
+    }
+
 }
 
 
-.footer{
-    background-color: $teritarycolor;
-    padding:0.5rem 0 1rem 1rem;
+.footer {
+    background-color: $black;
+    color: $white;
+    margin-top: 0.5rem;
+    padding: 1rem 0 1rem 1rem;
+    font-size: 0.8rem;
+    line-height: 1.125rem;
+    font-weight: Regular 400;
 
-    &__chat{
-        font-size:2rem;
-        color: $primarycolor;
+
+    &__icon {
+        height: 1rem;
+        margin-top: 1rem;
+        margin-right: 1.5rem;
     }
-    &__icon{
-        height:2rem;
-        margin-right:2rem;
+
+
+    &__company {
+        padding: 1rem 0;
     }
-    &__company{
-        font-size: 1rem;
-        color: $primarycolor;
-        padding:1rem 0;
+
+    &__mail {
+        padding: 1rem 0;
     }
-    &__address{
-        font-size: 1rem;;
-        color:$primarycolor;
-        display: block;
-        
+
+    &__name {
+        margin: 2rem 0 1rem 0;
+        font-size: 1.6rem;
     }
-    &__mail{
-        font-size: 0.9rem;
-        color:$primarycolor;
-        padding:1rem 0;
-    }
-    &__name{
-        font-size: 1rem;
-        color: $primarycolor;
-    }
-    &__copyrights{
-        font-size: 0.9rem;
-        color: $primarycolor;
+
+    &__copyrights {
+        font-size: 0.75rem;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .header{
+//     background-color: $teritarycolor;
+
+
+//     &__title{
+//         color: $primarycolor;
+//         text-align: center;
+//     }
+//     &__list{
+//         list-style: none;
+//         display:flex;
+//         justify-content: space-around;
+//         margin: 0;
+
+//     }
+//     &__leftlink{
+//         color:$primarycolor;
+//         text-decoration: none;
+//         border-bottom:2px solid $primarycolor;
+//         padding-bottom: 1.1rem;
+
+//         &--active{
+
+//         }
+
+//     }
+//     &__rightlink{
+//         color:$secondarycolor;
+//         text-decoration: none;
+//     }
+// }
