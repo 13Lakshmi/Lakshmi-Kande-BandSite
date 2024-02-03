@@ -12,63 +12,77 @@
 
 .header {
     background-color: $black;
+    display:block;
+    width:100%;
+    height:100%;
 
     &__image {
-        height: 1.25rem;
-        width: 7.5rem;
-        padding-left: 6rem;
-        padding-top: 0.6rem;
-        margin-bottom: 1.6rem;
-        font-weight: bold 700;
-        font-size: 1.3rem;
-        @include tablet{
+        height: 50%;
+        width: 100%;
+        padding: 1rem 0 1rem 0;
+        margin: auto;
+        @include tablet {
             padding-left: 3rem;
             padding-top: 2rem;
-
         }
     }
-
-    &__list {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding-bottom: 0.8rem;
-
+    &__logo{
+        width:50%;
+        display: block;
+        margin: auto;
     }
 
-    &__item {
-        color: $white;
-        font-size: 0.875rem;
-
+    &__nav{
+        height:40%;
+        width:100%;
     }
-
-    &__list {
+    &__list{
+        display: inline-flex;
+        height:40%;
+        width:100%;
         list-style: none;
-        @include tablet{
-            display: block;
-            
-        }
     }
 
-    // &__leftlink{
-
-    //     &--active{
-    //          border: 1rem solid $white;
-    //     }
-    // }
-    &__rightlink {
-        color: $mercury;
+    &__leftitem {
+        width:50%;
+        text-align: center;
+        border-bottom: $white 2px solid;
+        padding:0 0 0.7rem 0;
+        @include tablet {
+            display: inline-flex;
+            margin-left: 12rem;
+            justify-content: space-around;
+        }
+    }
+    &__rightitem{
+        width:50%;
+        text-align: center;
+        padding:0 0 0.7rem 0;
+    }
+    
+    &__link--active{
+        color:$white;
+        text-decoration:none;
+        //border-bottom: $white 2px solid;
+        padding:0.5rem;
+        width:100%;
+    }
+    &__link{
+        color:$mercury;
+        text-decoration:none;
     }
 }
 
 .hero {
+    position:relative;
     background-image: linear-gradient(rgba(50, 50, 50, 0.7), rgba(50, 50, 50, 0.7)), url("../assets/Images/hero-bio.jpg");
     background-size: cover;
     background-position: center;
     height: 20vh;
     width: 100%;
-    @include tablet{
-        height:40vh;
+
+    @include tablet {
+        height: 45vh;
         background-size: cover;
         background-position: center;
         width: 100%;
@@ -76,15 +90,18 @@
 
 
     &__text {
+        position:absolute;
         color: $white;
-        padding-top: 4rem;
+        top:44%;
+        //padding-top: 4rem;
         padding-left: 1rem;
         margin: 0;
         font-size: 1.46rem;
-        @include tablet{
-            padding-left:2rem;
-            padding-top:13rem;
-            font-size: 3.6rem;
+
+        @include tablet {
+            padding-left: 2.7rem;
+            padding-top: 13rem;
+            font-size: 3.4rem;
         }
     }
 }
@@ -93,9 +110,10 @@
     &__heading {
         font-size: 1.5rem;
         line-height: 2rem;
-        padding: 1.5rem 1rem 0 1rem;
+        padding: 1.5rem 1rem 0.2rem 1rem;
         font-weight: Bold 700;
-        @include tablet{
+
+        @include tablet {
             margin-left: 1rem;
             font-size: 2rem;
         }
@@ -108,30 +126,35 @@
         opacity: 2;
         background-size: cover;
         padding: 0.5rem 1rem 1rem 1rem;
-        @include tablet{
-            width:85%;
-            height:40vh;
-            margin:1rem 0rem 1rem 4rem;
-            
+
+        @include tablet {
+            width: 85%;
+            height: 40vh;
+            margin: 1rem 0rem 1rem 4rem;
+
         }
 
     }
 
     &__quote {
-        font-size: 0.71rem;
+        
         line-height: 1.2rem;
         font-weight: Demi 600;
         padding: 0 1rem 1rem 1rem;
-        @include tablet{
-            margin:0 4rem;
+
+        @include tablet {
+            margin: 0 4rem;
             font-size: 1.2rem;
         }
     }
-    &__first{
-        margin-bottom: 1rem;
+
+    &__first {
+        font-size: 0.85rem;
     }
-    &__second{
-        font-size: 1.1rem;
+
+    &__second {
+        font-size: 0.85rem;
+        padding: 0.3rem 0 0rem 0;
     }
 
     &__subheading {
@@ -139,16 +162,32 @@
         line-height: 1.375rem;
         font-weight: Demi 600;
         padding: 0 1rem 1rem 1rem;
+
+        @include tablet {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            font-weight: Demi 600;
+            margin: 2rem 0 0 4rem;
+        }
+
     }
 
     &__description {
         padding: 0 1rem 0 1rem;
+
     }
 
     &__top {
-        font-size: 0.846rem;
+        font-size: 0.85rem;
         line-height: 1.125rem;
         font-weight: Regular 400;
+        // @include tablet{
+        //     float: left;
+        //     height:20rem;
+        //     width:17.3rem;
+        //     margin-left:4rem;
+        //     font-size: 0.875rem;
+        // }
     }
 
     &__bottom {
@@ -156,24 +195,70 @@
         font-size: 0.84rem;
         line-height: 1.125rem;
         font-weight: Regular 400;
+        // @include tablet{
+        //    height:20rem;
+        //    width:16.8rem;
+        //     float: right;
+
+        // }
     }
 }
 
 .gallery {
-    
+
     &__subtitle {
         font-size: 1.5rem;
         line-height: 1rem;
         font-weight: Bold 700;
-        padding:2rem 0 0.5rem 1rem;
+        padding: 2rem 0 0.5rem 1rem;
+
+        @include tablet {
+            margin: 2rem 0 1rem 1rem;
+        }
+    }
+
+    &__row1 {
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+            margin-left: 2rem;
+
+        }
+    }
+
+    &__row2 {
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+            margin-left: 2rem;
+        }
+    }
+
+    &__row3 {
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+            margin-left: 2rem;
+        }
     }
 
     &__image {
         height: 23vh;
         width: 100%;
         background-position: cover;
-        padding: 0.5rem 1rem 0 1rem;
+        background-size: center;
+        padding:1rem 1rem 0 1rem;
+
+        @include tablet {
+            width: 32vw;
+            height: 20vw;
+            padding: 0 1rem 1rem 0;
+
+
+
+        }
     }
+
 
 }
 
@@ -187,11 +272,34 @@
     line-height: 1.125rem;
     font-weight: Regular 400;
 
+    &__chat {
+        font-size:1.5rem;
+        @include tablet {
+            float: left;
+            margin-left: 1rem;
+        }
+    }
 
     &__icon {
-        height: 1rem;
+        height: 1.5rem;
         margin-top: 1rem;
         margin-right: 1.5rem;
+
+    }
+
+    &__part1 {
+        @include tablet {
+            width: 33%;
+            float: left;
+            margin-left: 1rem;
+        }
+    }
+
+    &__part2 {
+        @include tablet {
+            width: 33%;
+            float: left;
+        }
     }
 
 
@@ -206,10 +314,20 @@
     &__name {
         margin: 2rem 0 1rem 0;
         font-size: 1.6rem;
+
+        @include tablet {
+
+            
+        }
     }
 
     &__copyrights {
         font-size: 0.75rem;
+
+        @include tablet {
+            margin-left: 1rem;
+            font-size: 0.9rem;
+        }
     }
 }
 
@@ -229,34 +347,3 @@
 
 
 
-// .header{
-//     background-color: $teritarycolor;
-
-
-//     &__title{
-//         color: $primarycolor;
-//         text-align: center;
-//     }
-//     &__list{
-//         list-style: none;
-//         display:flex;
-//         justify-content: space-around;
-//         margin: 0;
-
-//     }
-//     &__leftlink{
-//         color:$primarycolor;
-//         text-decoration: none;
-//         border-bottom:2px solid $primarycolor;
-//         padding-bottom: 1.1rem;
-
-//         &--active{
-
-//         }
-
-//     }
-//     &__rightlink{
-//         color:$secondarycolor;
-//         text-decoration: none;
-//     }
-// }

@@ -28,15 +28,15 @@
 
 .header {
   background-color: #323232;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 .header__image {
-  height: 1.25rem;
-  width: 7.5rem;
-  padding-left: 6rem;
-  padding-top: 0.6rem;
-  margin-bottom: 1.6rem;
-  font-weight: bold 700;
-  font-size: 1.3rem;
+  height: 50%;
+  width: 100%;
+  padding: 1rem 0 1rem 0;
+  margin: auto;
 }
 @media screen and (min-width: 768px) {
   .header__image {
@@ -44,29 +44,52 @@
     padding-top: 2rem;
   }
 }
-.header__list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding-bottom: 0.8rem;
+.header__logo {
+  width: 50%;
+  display: block;
+  margin: auto;
 }
-.header__item {
-  color: #FFFFFF;
-  font-size: 0.875rem;
+.header__nav {
+  height: 40%;
+  width: 100%;
 }
 .header__list {
+  display: inline-flex;
+  height: 40%;
+  width: 100%;
   list-style: none;
 }
+.header__leftitem {
+  width: 50%;
+  text-align: center;
+  border-bottom: #FFFFFF 2px solid;
+  padding: 0 0 0.7rem 0;
+}
 @media screen and (min-width: 768px) {
-  .header__list {
-    display: block;
+  .header__leftitem {
+    display: inline-flex;
+    margin-left: 12rem;
+    justify-content: space-around;
   }
 }
-.header__rightlink {
+.header__rightitem {
+  width: 50%;
+  text-align: center;
+  padding: 0 0 0.7rem 0;
+}
+.header__link--active {
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 0.5rem;
+  width: 100%;
+}
+.header__link {
   color: #E1E1E1;
+  text-decoration: none;
 }
 
 .hero {
+  position: relative;
   background-image: linear-gradient(rgba(50, 50, 50, 0.7), rgba(50, 50, 50, 0.7)), url("../assets/Images/hero-bio.jpg");
   background-size: cover;
   background-position: center;
@@ -75,31 +98,32 @@
 }
 @media screen and (min-width: 768px) {
   .hero {
-    height: 40vh;
+    height: 45vh;
     background-size: cover;
     background-position: center;
     width: 100%;
   }
 }
 .hero__text {
+  position: absolute;
   color: #FFFFFF;
-  padding-top: 4rem;
+  top: 44%;
   padding-left: 1rem;
   margin: 0;
   font-size: 1.46rem;
 }
 @media screen and (min-width: 768px) {
   .hero__text {
-    padding-left: 2rem;
+    padding-left: 2.7rem;
     padding-top: 13rem;
-    font-size: 3.6rem;
+    font-size: 3.4rem;
   }
 }
 
 .main__heading {
   font-size: 1.5rem;
   line-height: 2rem;
-  padding: 1.5rem 1rem 0 1rem;
+  padding: 1.5rem 1rem 0.2rem 1rem;
   font-weight: Bold 700;
 }
 @media screen and (min-width: 768px) {
@@ -123,7 +147,6 @@
   }
 }
 .main__quote {
-  font-size: 0.71rem;
   line-height: 1.2rem;
   font-weight: Demi 600;
   padding: 0 1rem 1rem 1rem;
@@ -135,10 +158,11 @@
   }
 }
 .main__first {
-  margin-bottom: 1rem;
+  font-size: 0.85rem;
 }
 .main__second {
-  font-size: 1.1rem;
+  font-size: 0.85rem;
+  padding: 0.3rem 0 0rem 0;
 }
 .main__subheading {
   font-size: 0.875rem;
@@ -146,11 +170,19 @@
   font-weight: Demi 600;
   padding: 0 1rem 1rem 1rem;
 }
+@media screen and (min-width: 768px) {
+  .main__subheading {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: Demi 600;
+    margin: 2rem 0 0 4rem;
+  }
+}
 .main__description {
   padding: 0 1rem 0 1rem;
 }
 .main__top {
-  font-size: 0.846rem;
+  font-size: 0.85rem;
   line-height: 1.125rem;
   font-weight: Regular 400;
 }
@@ -167,11 +199,45 @@
   font-weight: Bold 700;
   padding: 2rem 0 0.5rem 1rem;
 }
+@media screen and (min-width: 768px) {
+  .gallery__subtitle {
+    margin: 2rem 0 1rem 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery__row1 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery__row2 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery__row3 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
+  }
+}
 .gallery__image {
   height: 23vh;
   width: 100%;
   background-position: cover;
-  padding: 0.5rem 1rem 0 1rem;
+  background-size: center;
+  padding: 1rem 1rem 0 1rem;
+}
+@media screen and (min-width: 768px) {
+  .gallery__image {
+    width: 32vw;
+    height: 20vw;
+    padding: 0 1rem 1rem 0;
+  }
 }
 
 .footer {
@@ -183,10 +249,32 @@
   line-height: 1.125rem;
   font-weight: Regular 400;
 }
+.footer__chat {
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__chat {
+    float: left;
+    margin-left: 1rem;
+  }
+}
 .footer__icon {
-  height: 1rem;
+  height: 1.5rem;
   margin-top: 1rem;
   margin-right: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__part1 {
+    width: 33%;
+    float: left;
+    margin-left: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__part2 {
+    width: 33%;
+    float: left;
+  }
 }
 .footer__company {
   padding: 1rem 0;
@@ -200,4 +288,10 @@
 }
 .footer__copyrights {
   font-size: 0.75rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__copyrights {
+    margin-left: 1rem;
+    font-size: 0.9rem;
+  }
 }/*# sourceMappingURL=bio.css.map */
