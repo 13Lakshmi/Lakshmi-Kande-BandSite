@@ -12,102 +12,115 @@
 
 .header {
     background-color: $black;
-    display:block;
-    width:100%;
-    height:100%;
+    display: block;
+    width: 100%;
+    height: 100%;
+
     @include tablet {
         background-color: $black;
-        display:flex;
-        width:100%;
-        height:100%;
+        display: flex;
+        width: 100%;
+        height: 100%;
     }
+
     &__image {
         height: 50%;
         width: 100%;
         padding: 1rem 0 1rem 0;
         margin: auto;
+
         @include tablet {
-            width:25%;
-            height:100%;
-            margin:0;
-            padding:0;
-        }
-    }
-    &__logo{
-        width:50%;
-        display: block;
-        margin: auto;
-        @include tablet {
-            width:70%;
-            padding:1.5rem 0;
+            width: 25%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
         }
     }
 
-    &__nav{
-        height:40%;
-        width:100%;
+    &__logo {
+        width: 50%;
+        display: block;
+        margin: auto;
+
         @include tablet {
-            height:100%;
+            width: 70%;
+            padding: 1.5rem 0;
+        }
+    }
+
+    &__nav {
+        height: 40%;
+        width: 100%;
+
+        @include tablet {
+            height: 100%;
             width: 30%;
         }
     }
-    &__list{
+
+    &__list {
         display: inline-flex;
-        height:40%;
-        width:100%;
+        height: 40%;
+        width: 100%;
         list-style: none;
+
         @include tablet {
-            display:flex;
-            height:100%;
+            display: flex;
+            height: 100%;
             width: 100%;
         }
     }
 
     &__leftitem {
-        width:50%;
+        width: 50%;
         text-align: center;
         border-bottom: $white 2px solid;
-        padding:0 0 0.7rem 0;
+        padding: 0 0 0.7rem 0;
+
         @include tablet {
-            width:50%;
-            height:100%;
+            width: 50%;
+            height: 100%;
             text-align: center;
             border-bottom: none;
-            padding:1.5rem;
+            padding: 1.5rem;
         }
     }
-    &__rightitem{
-        width:50%;
+
+    &__rightitem {
+        width: 50%;
         text-align: center;
-        padding:0 0 0.7rem 0;
+        padding: 0 0 0.7rem 0;
+
         @include tablet {
-            width:50%;
+            width: 50%;
             text-align: center;
-            padding:1.5rem;
+            padding: 1.5rem;
             font-weight: normal;
         }
     }
-    
-    &__leftlink--active{
-        color:$white;
-        text-decoration:none;
-        padding:0.5rem;
-        width:100%;
+
+    &__leftlink--active {
+        color: $white;
+        text-decoration: none;
+        padding: 0.5rem;
+        width: 100%;
+
         @include tablet {
-            height:100%;
-            padding:1.5rem 0;
+            height: 100%;
+            padding: 1.5rem 0;
             border-bottom: $white 2px solid;
         }
     }
-    &__rightlink{
-        color:$mercury;
-        text-decoration:none;
+
+    &__rightlink {
+        color: $mercury;
+        text-decoration: none;
         font-weight: normal;
     }
 }
 
 .hero {
-    position:relative;
+    position: relative;
     background-image: linear-gradient(rgba(50, 50, 50, 0.7), rgba(50, 50, 50, 0.7)), url("../assets/Images/hero-bio.jpg");
     background-size: cover;
     background-position: center;
@@ -115,7 +128,7 @@
     width: 100%;
 
     @include tablet {
-        position:relative;
+        position: relative;
         background-size: cover;
         height: 55vh;
         width: 100%;
@@ -123,20 +136,20 @@
 
 
     &__text {
-        position:absolute;
+        position: absolute;
         color: $white;
-        top:44%;
+        top: 44%;
         //padding-top: 4rem;
         padding-left: 1rem;
         margin: 0;
         font-size: 1.46rem;
 
         @include tablet {
-        position:absolute;
-        color: $white;
-        top:44%;
-        font-size: 3.7rem;
-        padding-left: 2rem;
+            position: absolute;
+            color: $white;
+            top: 44%;
+            font-size: 3.7rem;
+            padding-left: 2rem;
         }
     }
 }
@@ -173,7 +186,7 @@
     }
 
     &__quote {
-        
+
         line-height: 1.2rem;
         font-weight: Demi 600;
         padding: 0 1rem 1rem 1rem;
@@ -186,34 +199,35 @@
 
     &__first {
         font-size: 0.85rem;
-        font-weight:600;
-        @include tablet{
+        font-weight: 600;
+
+        @include tablet {
             font-size: 1.495rem;
-            font-weight:600;
-            line-height:1.8rem;
+            font-weight: 600;
+            line-height: 1.8rem;
         }
     }
 
     &__second {
         font-size: 0.85rem;
         padding: 0.3rem 0 0rem 0;
-        @include tablet{
+
+        @include tablet {
             font-size: 1rem;
-            font-weight:600;
-            line-height:2rem ;
+            font-weight: 600;
+            line-height: 2rem;
         }
     }
 
     &__subheading {
         font-size: 0.875rem;
         line-height: 1.375rem;
-        font-weight: Demi 600;
+        font-weight:600;
         padding: 0 1rem 1rem 1rem;
 
         @include tablet {
             font-size: 1.5rem;
             line-height: 2rem;
-            font-weight: Demi 600;
             margin: 2rem 0 0 4rem;
         }
 
@@ -221,8 +235,9 @@
 
     &__description {
         padding: 0 1rem 0 1rem;
-        @include tablet{
-            display:flex;
+
+        @include tablet {
+            display: flex;
         }
     }
 
@@ -230,7 +245,8 @@
         font-size: 0.85rem;
         line-height: 1.125rem;
         font-weight: Regular 400;
-        @include tablet{
+
+        @include tablet {
             font-size: 0.91rem;
             line-height: 1.425rem;
             font-weight: 400;
@@ -239,11 +255,12 @@
     }
 
     &__bottom {
-        margin-top: 1rem;
+        margin: 1rem 0;
         font-size: 0.84rem;
         line-height: 1.125rem;
         font-weight: Regular 400;
-        @include tablet{
+
+        @include tablet {
             margin: 0;
             font-size: 0.91rem;
             line-height: 1.425rem;
@@ -256,13 +273,13 @@
 .gallery {
     background-color: $mercury;
     margin: 0;
-    padding:0;
+    padding: 0;
 
     &__subtitle {
         font-size: 1.5rem;
         line-height: 1rem;
         font-weight: 700;
-        padding: 2rem 0 1rem 1rem;
+        padding: 2rem 0 1.3rem 1rem;
 
         @include tablet {
             margin: 2rem 0 1rem 1rem;
@@ -298,11 +315,11 @@
     }
 
     &__image {
-        height: 23vh;
+        height: 21vh;
         width: 100%;
         background-position: cover;
         background-size: center;
-        padding:1rem 1rem 0 1rem;
+        padding: 0rem 1rem 1rem 1rem;
 
         @include tablet {
             width: 32vw;
@@ -321,17 +338,39 @@
 .footer {
     background-color: $black;
     color: $white;
-    margin-top: 0.5rem;
     padding: 1rem 0 1rem 1rem;
     font-size: 0.8rem;
     line-height: 1.125rem;
     font-weight: Regular 400;
 
-    &__chat {
-        font-size:1.5rem;
+    @include tablet {
+        //margin: 0;
+        font-size: 0.9rem;
+    }
+
+    &__row1 {
         @include tablet {
-            float: left;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            margin: 2rem 0;
+        }
+    }
+
+    &__chat {
+        font-size: 1.5rem;
+
+        @include tablet {
+            font-size: 2.45rem;
+            font-weight: 600;
             margin-left: 1rem;
+            padding: 0.5rem 0 0 0;
+        }
+    }
+
+    &__icons {
+        @include tablet {
+            display: flex;
         }
     }
 
@@ -340,12 +379,38 @@
         margin-top: 1rem;
         margin-right: 1.5rem;
 
+        @include tablet {
+            margin: 0.2rem 0.3rem 0 1.3rem;
+
+        }
+    }
+
+    &__logo1 {
+        visibility: hidden;
+        @include tablet {
+            visibility: visible;
+            padding: 0 0 0 14.5rem;
+        }
+    }
+
+    &__logo2 {
+        visibility: visible;
+        padding: 2rem 0 1rem 0;
+        @include tablet {
+            visibility: hidden;
+            padding: 0;
+        }
+    }
+
+    &__row2 {
+        @include tablet {
+            display: flex;
+        }
     }
 
     &__part1 {
         @include tablet {
             width: 33%;
-            float: left;
             margin-left: 1rem;
         }
     }
@@ -353,13 +418,21 @@
     &__part2 {
         @include tablet {
             width: 33%;
-            float: left;
         }
     }
 
+    &__part3 {
+        @include tablet {
+            width: 30%;
+            margin: 0 2rem 0 0;
+        }
+    }
 
     &__company {
-        padding: 1rem 0;
+        padding: 0 0 1rem 0;
+        @include tablet {
+            padding: 1rem 0;
+        }
     }
 
     &__mail {
@@ -370,35 +443,16 @@
         margin: 2rem 0 1rem 0;
         font-size: 1.6rem;
 
-        @include tablet {
-
-            
-        }
+        @include tablet {}
     }
 
     &__copyrights {
-        font-size: 0.75rem;
+        font-size: 0.68rem;
 
         @include tablet {
             margin-left: 1rem;
             font-size: 0.9rem;
+            padding:1rem 0 2rem 0;
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

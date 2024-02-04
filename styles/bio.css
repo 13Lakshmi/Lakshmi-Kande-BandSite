@@ -231,14 +231,13 @@
 .main__subheading {
   font-size: 0.875rem;
   line-height: 1.375rem;
-  font-weight: Demi 600;
+  font-weight: 600;
   padding: 0 1rem 1rem 1rem;
 }
 @media screen and (min-width: 768px) {
   .main__subheading {
     font-size: 1.5rem;
     line-height: 2rem;
-    font-weight: Demi 600;
     margin: 2rem 0 0 4rem;
   }
 }
@@ -264,7 +263,7 @@
   }
 }
 .main__bottom {
-  margin-top: 1rem;
+  margin: 1rem 0;
   font-size: 0.84rem;
   line-height: 1.125rem;
   font-weight: Regular 400;
@@ -288,7 +287,7 @@
   font-size: 1.5rem;
   line-height: 1rem;
   font-weight: 700;
-  padding: 2rem 0 1rem 1rem;
+  padding: 2rem 0 1.3rem 1rem;
 }
 @media screen and (min-width: 768px) {
   .gallery__subtitle {
@@ -320,11 +319,11 @@
   }
 }
 .gallery__image {
-  height: 23vh;
+  height: 21vh;
   width: 100%;
   background-position: cover;
   background-size: center;
-  padding: 1rem 1rem 0 1rem;
+  padding: 0rem 1rem 1rem 1rem;
 }
 @media screen and (min-width: 768px) {
   .gallery__image {
@@ -337,19 +336,38 @@
 .footer {
   background-color: #323232;
   color: #FFFFFF;
-  margin-top: 0.5rem;
   padding: 1rem 0 1rem 1rem;
   font-size: 0.8rem;
   line-height: 1.125rem;
   font-weight: Regular 400;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__row1 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 2rem 0;
+  }
 }
 .footer__chat {
   font-size: 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .footer__chat {
-    float: left;
+    font-size: 2.45rem;
+    font-weight: 600;
     margin-left: 1rem;
+    padding: 0.5rem 0 0 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__icons {
+    display: flex;
   }
 }
 .footer__icon {
@@ -358,20 +376,58 @@
   margin-right: 1.5rem;
 }
 @media screen and (min-width: 768px) {
+  .footer__icon {
+    margin: 0.2rem 0.3rem 0 1.3rem;
+  }
+}
+.footer__logo1 {
+  visibility: hidden;
+}
+@media screen and (min-width: 768px) {
+  .footer__logo1 {
+    visibility: visible;
+    padding: 0 0 0 14.5rem;
+  }
+}
+.footer__logo2 {
+  visibility: visible;
+  padding: 2rem 0 1rem 0;
+}
+@media screen and (min-width: 768px) {
+  .footer__logo2 {
+    visibility: hidden;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__row2 {
+    display: flex;
+  }
+}
+@media screen and (min-width: 768px) {
   .footer__part1 {
     width: 33%;
-    float: left;
     margin-left: 1rem;
   }
 }
 @media screen and (min-width: 768px) {
   .footer__part2 {
     width: 33%;
-    float: left;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__part3 {
+    width: 30%;
+    margin: 0 2rem 0 0;
   }
 }
 .footer__company {
-  padding: 1rem 0;
+  padding: 0 0 1rem 0;
+}
+@media screen and (min-width: 768px) {
+  .footer__company {
+    padding: 1rem 0;
+  }
 }
 .footer__mail {
   padding: 1rem 0;
@@ -381,11 +437,12 @@
   font-size: 1.6rem;
 }
 .footer__copyrights {
-  font-size: 0.75rem;
+  font-size: 0.68rem;
 }
 @media screen and (min-width: 768px) {
   .footer__copyrights {
     margin-left: 1rem;
     font-size: 0.9rem;
+    padding: 1rem 0 2rem 0;
   }
 }/*# sourceMappingURL=bio.css.map */
