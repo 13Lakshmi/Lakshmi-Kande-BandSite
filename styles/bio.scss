@@ -4,10 +4,12 @@
 
 
 * {
-    font-family: "AvenirNext LT Pro";
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+body{
+    font-family: "AvenirNext LT Pro";
 }
 
 .header {
@@ -451,6 +453,99 @@
 
 }
 
+.conversations{
+
+    &__heading{ 
+        padding: 1rem 0 0.5rem 1rem;
+    }
+    &__img{
+        border-radius: 50%;
+        width: 2.5rem;
+        height:2.5rem;
+        display: flex;
+        flex-direction: row;
+        object-fit: cover;
+    }
+    &__label{
+        padding-left:4rem;
+        display: flex;
+        flex-direction: column;
+       margin:1rem 0 0.5rem 0;
+        color:$silver;
+
+    }
+    &__input{
+        margin-left: 4rem;
+        margin-bottom: 0.5rem;
+        padding:0.75rem 3rem 0.75rem 0.75rem;
+        height: 2.25rem;
+        border: 1px solid $mercury;
+        border-radius: 0.25rem;
+        display:inline-flex;
+    }
+    &__textarea{
+        margin-left: 4rem;
+        padding:0.75rem 4rem 4rem 0.75rem;
+        border: 1px solid $mercury;
+        border-radius: 0.25rem;
+        resize: none;
+    }
+      ::placeholder{
+        color: $darkblack;
+        font-weight: 600;
+      }  
+    
+    &__box{
+        margin:1rem 0 1rem 4rem;
+    }
+    &__button{
+        padding: 0.5rem 4.5rem ;
+        color: $white;
+        background-color: $black;
+        border: 1px solid $black;
+        border-radius: 0.25rem;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    &__list{
+        list-style:none;
+    }
+    &__item {
+        //border: 1px solid $darkblack;
+        padding-left: 4rem;
+        border-bottom: 1px solid $silver;
+        width:90%;
+    
+        @include tablet {
+          flex-direction: row;
+          justify-content: space-between;
+        }
+      }
+      &__name {
+        color: $darkblack;
+        font-weight: 600; 
+        padding:1rem 0; 
+       display: inline-flex;
+        
+      }    
+     &__date{
+        color:$silver;   
+        display: inline-flex;
+
+       
+
+     }
+
+     &__comment {
+            font-size: 0.77rem;
+            font-weight: 550;
+            line-height: 1rem;
+            padding-bottom:1rem;
+            
+         }
+}
+
+
 
 .footer {
     background-color: $black;
@@ -579,17 +674,16 @@
         }
     }
     &__mail {
-        padding: 2rem 0;
+        padding-top: 1rem;
         text-decoration: none;
         color: $white;
+        line-height: 4rem;
     }
 
 
     &__name {
         margin: 2rem 0 1rem 0;
-        font-size: 1.6rem;
-
-        
+        font-size: 1.6rem;   
     }
 
     &__copyrights {
@@ -606,4 +700,5 @@
             padding: 1rem 0 2rem 0;
         }
     }
+
 }
