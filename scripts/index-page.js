@@ -2,57 +2,75 @@ const conversationsArray = [
     {
         name: "Victor Pinto",
         comment: "This is art. This is inexplicable magic expressed in the purest way, everything that makes up this majestic work deserves reverence. Let us appreciate this for what it is and what it contains. ",
-        date: Date.now(),
+        date: "11/02/2023",
     },
     {
         name: "Christina Cabrera",
         comment: "I feel blessed to have seen them in person. What a show! They were just perfection. If there was one day of my life I could relive, this would be it. What an incredible day.",
-        date: Date.now(),
+        date:"10/28/2023",
     },
     {
         name: "Issac Tadesse",
         comment: "I can't stop listening. Every time I hear one of their songs - the vocals - it gives me goosebumps. Shivers straight down my spine. What a beautiful expression of creativity. Can't get enough.",
-        date: Date.now(),
+        date: "10/20/2023",
     },
 ];
  
 
-// <li class="conversation__item">
-//       <p class="conversation__detail">Victor Pinto</p>
-//       <p class="conversation__detail conversation__detail--special">
-//       You're the best!
-//       </p>
-//       <p class="conversation__detail">Today</p>
-//   </li>
-//console.log("array",conversationsArray[1].name);
+
 
 const listEl = document.querySelector("#conversations-list");
 function displayconversations(){
     listEl.textContent="";
 
+
     for(let i = 0; i < conversationsArray.length;i++){
-        
+
+        const dividerEl = document.createElement("div");
+        dividerEl.classList.add("conversations__divider");
+        listEl.appendChild(dividerEl);
+ 
 
      const itemEl = document.createElement("li");
      itemEl.classList.add("conversations__item");
      listEl.appendChild(itemEl);
 
+     const pictureEl = document.createElement("div");
+     pictureEl.classList.add("conversations__picture");
+     itemEl.appendChild(pictureEl);
+
+    const div = document.createElement("div");
+    div.classList.add("conversations__fulltext");
+    itemEl.append(div);
+
+    const div1 = document.createElement("div");
+    div1.classList.add("conversations__toptext");
+    div.appendChild(div1);
 
     const nameEl = document.createElement("p");
     nameEl.classList.add("conversations__name");
     nameEl.innerText = conversationsArray[i].name;
-    itemEl.appendChild(nameEl);
+    div1.appendChild(nameEl);
 
     const dateEl = document.createElement("p");
     dateEl.classList.add("conversations__date");
     dateEl.innerText = conversationsArray[i].date;
-    itemEl.appendChild(dateEl);
+    div1.appendChild(dateEl);
+
+    
   
 
     const conversationEl = document.createElement("p");
     conversationEl.classList.add("conversations__comment");
     conversationEl.innerText = conversationsArray[i].comment;
-    itemEl.appendChild(conversationEl);
+    div.appendChild(conversationEl);
+
+    const divider1El = document.createElement("div");
+    divider1El.classList.add("conversations__divider");
+    listEl.appendChild(divider1El);
+
+
+
 }
  }
  //JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else.

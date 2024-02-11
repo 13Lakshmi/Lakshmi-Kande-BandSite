@@ -170,22 +170,45 @@ body {
 
 .hero {
 
-    background-image: linear-gradient(rgba(50, 50, 50, 0.2), rgba(50, 50, 50, 0.2)), url("../assets/Images/Photo-gallery-3.jpg");
+    background-image: linear-gradient(rgba(50, 50, 50, 0.2), rgba(50, 50, 50, 0.2)), url("../assets/Images/hero-shows.jpg");
     background-size: cover;
     background-position: center;
-    justify-content: center;
+
+    &__album{
+        width:70%;
+        @include tablet{
+        width:60%;
+        }
+        @include desktop{
+            width:50%;
+        }
+    }
+
+    @include desktop {
+        display: flex;
+        width: 100%;
+        height: 40rem;
+    }
 
 
     &__text {
         color: $white;
-        padding: 1rem 0 0.5rem 1.3rem;
+        padding: 1.8rem 0 0.8rem 1.3rem;
         font-size: 0.9rem;
         font-weight: 600;
 
         @include tablet {
-            padding: 2rem 0 0 2rem;
+            padding: 2.5rem 0 0 2rem;
             font-size: 1.4rem;
             font-weight: 600;
+        }
+
+        @include desktop {
+            padding: 7rem 0 0 8.5rem;
+            font-size: 1.5rem;
+            line-height: 2rem;
+
+
         }
 
     }
@@ -195,69 +218,116 @@ body {
         padding-left: 1.3rem;
         margin: 0;
         font-size: 1.4rem;
-        font-weight: 600;
-        line-height: 2rem;
 
         @include tablet {
             padding: 1rem 0 0 2rem;
-            font-size: 3.5rem;
-            font-weight: 800;
+            font-size: 3.1rem;
             line-height: 4rem;
+            font-weight: 600;
+        }
+
+        @include desktop {
+            padding: 1.5rem 0 0 8.2rem;
+            font-size: 4rem;
+            line-height: 5rem;
+            font-weight: 600;
+
+
         }
     }
+
+
 
     &__sound {
         width: 100%;
         height: 9rem;
-        padding: 1.3rem;
+        padding: 1rem 1.3rem 2rem 1.3rem;
 
         @include tablet {
             width: 60%;
             height: 14rem;
-            padding: 3rem 0 3rem 2rem;
+            padding: 3rem 0 3rem 2.5rem;
         }
+
+        @include desktop {
+            width: 120%;
+            margin: 8.3rem 0 0 2rem;
+        }
+
 
     }
 
 }
 
 .shows {
+    @include desktop {
+        display: flex;
+    }
+
     &__subtitle-outside {
         display: none;
 
         @include tablet {
             display: flex;
-            padding:0 1rem 0 2rem;
-            font-size: 0.9rem;
+            padding: 0 1rem 0 2rem;
+            font-size: 1rem;
+            font-weight: 600;
             color: $silver;
             width: 25.1%;
 
         }
+
     }
 
     &__subtitle-format {
         display: none;
-        @include tablet {
-            display: flex;
-            width:100%;
-        }
-    }
 
-    &__item {
         @include tablet {
             display: flex;
             width: 100%;
         }
     }
 
+    &__item {
+
+        @include tablet {
+            display: flex;
+            width: 100%;
+        }
+    }
+    :hover{
+        color: $mercury;
+    }
+
+
+    &__left {
+        @include desktop {
+            width: 27%;
+            margin-top: 2.5rem;
+        }
+    }
+    &__right{
+        @include desktop{
+            width:73%;
+            margin: 3.5rem 3rem 0 0;
+        }
+    }
+
+
     &__title {
         margin: 2rem 0 0.6rem 1rem;
         font-weight: 620;
+        width: 50%;
 
         @include tablet {
             margin: 3rem 0 2rem 2rem;
             font-size: 3rem;
             font-weight: 600;
+        }
+
+        @include desktop {
+            margin:0 0 0 7rem;
+            font-size: 2.5rem;
         }
     }
 
@@ -272,9 +342,10 @@ body {
             width: 28%;
             padding: 0;
 
-        }
+        }    
 
     }
+
 
     &__detail {
         color: $darkblack;
@@ -288,6 +359,8 @@ body {
             line-height: 3rem;
             font-size: 0.9rem;
         }
+
+
     }
 
     &__button {
@@ -303,7 +376,11 @@ body {
         @include tablet {
             padding: 1rem;
             width: 20%;
-            margin:1rem 2rem 1rem 1rem;
+            margin: 1rem 2rem 1rem 1rem;
+        }
+        @include desktop{
+            padding:0.9rem;
+            margin: 1rem 3.3rem 1rem 0;
         }
 
     }
@@ -311,16 +388,17 @@ body {
     &__divider {
         border-bottom: 2px solid $mercury;
         width: 100%;
-        @include tablet{
-            margin:0 1rem;
-            width:95%;
-            
+
+        @include tablet {
+            margin: 0 1rem;
+            width: 95%;
+
         }
 
     }
 
-
 }
+
 
 .footer {
     background-color: $black;
@@ -489,10 +567,4 @@ body {
             padding: 1rem 0 2rem 0;
         }
     }
-}
-
-
-
-.sc-button-cta {
-    display: none;
 }

@@ -501,89 +501,234 @@ body {
 }
 
 .conversations__heading {
-  padding: 1rem 0 0.5rem 1rem;
+  padding: 2rem 0 0.5rem 1rem;
+}
+@media screen and (min-width: 768px) {
+  .conversations__heading {
+    padding: 3rem 0 1rem 2rem;
+    font-size: 2.3rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .conversations__heading {
+    padding: 3rem 0 1rem 7rem;
+    font-size: 2.5rem;
+  }
+}
+.conversations__form {
+  display: flex;
+}
+@media screen and (min-width: 1280px) {
+  .conversations__form {
+    display: flex;
+    justify-content: center;
+  }
 }
 .conversations__img {
-  border-radius: 50%;
-  width: 2.5rem;
+  width: 3rem;
   height: 2.5rem;
-  display: flex;
-  flex-direction: row;
+  border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+  margin: 2.5rem 0 0 0.8rem;
+}
+@media screen and (min-width: 768px) {
+  .conversations__img {
+    margin-top: 3rem;
+  }
 }
 .conversations__label {
-  padding-left: 4rem;
+  padding-left: 0.5rem;
   display: flex;
   flex-direction: column;
   margin: 1rem 0 0.5rem 0;
   color: #AFAFAF;
 }
 .conversations__input {
-  margin-left: 4rem;
-  margin-bottom: 0.5rem;
-  padding: 0.75rem 3rem 0.75rem 0.75rem;
+  margin-left: 0.5rem;
+  padding: 0.75rem 2.8rem 0.75rem 0.75rem;
   height: 2.25rem;
   border: 1px solid #E1E1E1;
   border-radius: 0.25rem;
-  display: inline-flex;
+  background-color: #E1E1E1;
+}
+@media screen and (min-width: 768px) {
+  .conversations__input {
+    padding: 1.5rem 24.2rem 1.5rem 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .conversations__input {
+    padding: 1.5rem 17.2rem 1.5rem 0;
+  }
+}
+.conversations__input:focus {
+  outline-color: #323232;
 }
 .conversations__textarea {
-  margin-left: 4rem;
+  margin-left: 0.5rem;
   padding: 0.75rem 4rem 4rem 0.75rem;
   border: 1px solid #E1E1E1;
   border-radius: 0.25rem;
   resize: none;
+  background-color: #E1E1E1;
 }
-.conversations ::-moz-placeholder {
-  color: #000000;
-  font-weight: 600;
+@media screen and (min-width: 768px) {
+  .conversations__textarea {
+    padding-right: 24.5rem;
+  }
 }
-.conversations ::placeholder {
-  color: #000000;
-  font-weight: 600;
+@media screen and (min-width: 1280px) {
+  .conversations__textarea {
+    padding-right: 17.6rem;
+  }
 }
-.conversations__box {
-  margin: 1rem 0 1rem 4rem;
+.conversations__textarea:focus {
+  outline-color: #323232;
+}
+.conversations__right {
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .conversations__right {
+    margin-left: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .conversations__left {
+    padding-left: 4rem;
+  }
 }
 .conversations__button {
-  padding: 0.5rem 4.5rem;
+  padding: 0.5rem 4.4rem;
   color: #FFFFFF;
   background-color: #323232;
   border: 1px solid #323232;
   border-radius: 0.25rem;
   font-size: 1rem;
   font-weight: 700;
+  margin: 1rem 0 1rem 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .conversations__button {
+    padding: 0.5rem 3rem;
+    margin: 1.5rem 0 1.5rem 24rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .conversations__button {
+    margin: 1.5rem 0 1.5rem 17rem;
+  }
+}
+.conversations ::-moz-placeholder {
+  color: #000000;
+  font-weight: 600;
+  font-family: "AvenirNext LT Pro";
+}
+.conversations ::placeholder {
+  color: #000000;
+  font-weight: 600;
+  font-family: "AvenirNext LT Pro";
+}
+@media screen and (min-width: 768px) {
+  .conversations ::-moz-placeholder {
+    padding-left: 1.2rem;
+  }
+  .conversations ::placeholder {
+    padding-left: 1.2rem;
+  }
 }
 .conversations__list {
   list-style: none;
+  margin: 0;
+}
+@media screen and (min-width: 1280px) {
+  .conversations__list {
+    margin: 0 18rem 0 25rem;
+  }
+}
+.conversations__divider {
+  border-bottom: 1px solid #AFAFAF;
+  margin: 0 1.2rem;
+}
+@media screen and (min-width: 768px) {
+  .conversations__divider {
+    margin: 0 2rem;
+  }
+}
+.conversations__li {
+  height: 5rem;
+}
+.conversations__picture {
+  margin: 1rem 0 0 1rem;
+  padding: 1rem;
+  border-radius: 50%;
+  width: 4rem;
+  height: 3.5rem;
+  background-color: #E1E1E1;
 }
 .conversations__item {
-  padding-left: 4rem;
-  border-bottom: 1px solid #AFAFAF;
+  display: flex;
   width: 90%;
 }
 @media screen and (min-width: 768px) {
   .conversations__item {
+    margin-left: 2.5rem;
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .conversations__item {
+    margin-left: 1rem;
   }
 }
 .conversations__name {
   color: #000000;
   font-weight: 600;
   padding: 1rem 0;
-  display: inline-flex;
+}
+@media screen and (min-width: 768px) {
+  .conversations__name {
+    font-weight: 700;
+  }
 }
 .conversations__date {
   color: #AFAFAF;
-  display: inline-flex;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .conversations__date {
+    padding-left: 0;
+  }
+}
+.conversations__toptext {
+  padding-left: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .conversations__toptext {
+    padding-left: 1rem;
+  }
 }
 .conversations__comment {
-  font-size: 0.77rem;
-  font-weight: 550;
+  font-size: 0.75rem;
+  font-weight: 600;
   line-height: 1rem;
-  padding-bottom: 1rem;
+  padding: 0 0 1rem 1rem;
+}
+@media screen and (min-width: 768px) {
+  .conversations__comment {
+    font-size: 0.98rem;
+    line-height: 1.5rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .conversations__comment {
+    font-size: 0.85rem;
+  }
 }
 
 .footer {
@@ -592,7 +737,8 @@ body {
   padding: 1rem 0 1rem 1rem;
   font-size: 0.8rem;
   line-height: 1.125rem;
-  font-weight: Regular 400;
+  font-weight: 400;
+  margin-top: 2rem;
 }
 @media screen and (min-width: 768px) {
   .footer {

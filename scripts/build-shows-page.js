@@ -37,22 +37,36 @@ const showsArray = [
         LOCATION: "San Francisco, CA",
 
     },
+    {
+        DATE: "Wed Dec 18 2024",
+        VENUE: "Press Club",
+        LOCATION: "San Francisco, CA",
+
+    },
 ];
 console.table(showsArray);
 
 
+const section = document.querySelector("#shows");
+const div1 = document.createElement("div");
+div1.classList.add("shows__left");
+section.appendChild(div1);
 
+const titleEl = document.createElement("h2");
+titleEl.classList.add("shows__title");
+titleEl.innerText = "Shows";
+div1.appendChild(titleEl);
 
+const div2 = document.createElement("div");
+div2.classList.add("shows__right");
+section.appendChild(div2);
 
 
 const listEl = document.querySelector("#shows-list");
+
+div2.appendChild(listEl);
+
 function displayShows() {
-
-
-    const titleEl = document.createElement("h2");
-    titleEl.classList.add("shows__title");
-    titleEl.innerText = "Shows";
-    listEl.appendChild(titleEl);
 
     const subtitle = document.createElement("li");
     subtitle.classList.add("shows__subtitle-format");
@@ -122,6 +136,9 @@ function displayShows() {
         dividerEl.classList.add("shows__divider");
         listEl.appendChild(dividerEl);
 
+
     }
+
 }
+
 displayShows();
