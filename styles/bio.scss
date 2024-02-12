@@ -405,7 +405,8 @@ body {
             padding-top: 3rem;
         }
     }
-    &__rows {
+
+    &__row1 {
         @include tablet {
             display: flex;
             flex-direction: row;
@@ -419,12 +420,36 @@ body {
         }
     }
 
-  
-    
- 
+    &__row2 {
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+            margin-left: 2rem;
+        }
 
+        @include desktop {
+            display: flex;
+            flex-direction: row;
+            margin-left: 7rem;
+        }
+    }
+
+    &__row3 {
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+            margin-left: 2rem;
+        }
+
+        @include desktop {
+            display: flex;
+            flex-direction: row;
+            margin-left: 7rem;
+        }
+    }
 
     &__image {
+        height: 21vh;
         width: 100%;
         background-position: cover;
         background-size: center;
@@ -443,10 +468,13 @@ body {
         }
     }
 
-
 }
 
+
+
 .conversations {
+
+
 
     &__heading {
         padding: 2rem 0 0.5rem 1rem;
@@ -465,7 +493,8 @@ body {
 
     &__form {
         display: flex;
-        @include desktop{
+
+        @include desktop {
             display: flex;
             justify-content: center;
         }
@@ -477,7 +506,8 @@ body {
         border-radius: 50%;
         object-fit: cover;
         margin: 2.5rem 0 0 0.8rem;
-        @include tablet{
+
+        @include tablet {
             margin-top: 3rem;
         }
     }
@@ -491,8 +521,6 @@ body {
     }
 
     &__input {
-
-
         margin-left: 0.5rem;
         padding: 0.75rem 2.8rem 0.75rem 0.75rem;
         height: 2.25rem;
@@ -500,18 +528,21 @@ body {
         border-radius: 0.25rem;
         background-color: $mercury;
 
-        @include tablet{
-            padding:1.5rem 24.2rem 1.5rem 0;
+        @include tablet {
+            padding: 1.5rem 24.2rem 1.5rem 0;
         }
-        @include desktop{
-            padding:1.5rem 17.2rem 1.5rem 0;
+
+        @include desktop {
+            padding: 1.5rem 17.2rem 1.5rem 0;
         }
     }
-    &__input:focus{
+
+    &__input:focus {
         outline-color: $black;
     }
-    &__input:invalid{
-        outline-color: red;
+
+    &__input:invalid {
+        outline-color: #D22D2D;
     }
 
     &__textarea {
@@ -521,26 +552,31 @@ body {
         border-radius: 0.25rem;
         resize: none;
         background-color: $mercury;
-        @include tablet{
-            padding-right:24.5rem;
+
+        @include tablet {
+            padding-right: 24.5rem;
         }
-        @include desktop{
+
+        @include desktop {
             padding-right: 17.6rem;
         }
     }
-    &__textarea:focus{
+
+    &__textarea:focus {
         outline-color: $black;
     }
 
     &__right {
         flex-direction: column;
-        @include tablet{
-            margin-left:1rem;
-         }
+
+        @include tablet {
+            margin-left: 1rem;
+        }
     }
-    &__left{
-        @include tablet{
-            padding-left: 4rem;   
+
+    &__left {
+        @include tablet {
+            padding-left: 4rem;
         }
     }
 
@@ -558,6 +594,7 @@ body {
             padding: 0.5rem 3rem;
             margin: 1.5rem 0 1.5rem 24rem;
         }
+
         @include desktop {
             margin: 1.5rem 0 1.5rem 17rem;
         }
@@ -569,7 +606,7 @@ body {
         font-weight: 600;
         font-family: "AvenirNext LT Pro";
 
-        @include tablet{
+        @include tablet {
             padding-left: 1.2rem;
         }
 
@@ -578,9 +615,9 @@ body {
     &__list {
         list-style: none;
         margin: 0;
-               
-        @include desktop{
-            margin:0 18rem 0 25rem;
+
+        @include desktop {
+            margin: 0 18rem 0 25rem;
         }
     }
 
@@ -601,10 +638,10 @@ body {
         margin: 1rem 0 0 1rem;
         padding: 1rem;
         border-radius: 50%;
-        width: 4rem;
-        height: 3.5rem;
+        width: 3rem;
+        height: 3rem;
         background-color: $mercury;
-
+        object-fit: cover;
     }
 
     &__item {
@@ -616,10 +653,7 @@ body {
             flex-direction: row;
             justify-content: space-between;
         }
-               
-        @include desktop{
-            margin-left:1rem;
-        }
+
     }
 
     &__name {
@@ -663,10 +697,13 @@ body {
             font-size: 0.98rem;
             line-height: 1.5rem;
         }
-        @include desktop{
+
+        @include desktop {
             font-size: 0.85rem;
         }
     }
+
+
 }
 
 

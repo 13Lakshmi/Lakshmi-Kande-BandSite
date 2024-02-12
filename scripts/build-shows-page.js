@@ -1,10 +1,3 @@
-// <li class="shows__item">
-//       <p class="shows__detail">Victor Pinto</p>
-//       <p class="shows__detail conversation__detail--special">
-//       You're the best!
-//       </p>
-//       <p class="shows__detail">Today</p>
-//   </li>
 
 const showsArray = [
     {
@@ -128,7 +121,7 @@ function displayShows() {
         head2El.appendChild(locationEl);
 
         const buttonEl = document.createElement("button");
-        buttonEl.classList.add("shows__button","shows__button--divider");
+        buttonEl.classList.add("shows__button", "shows__button--divider");
         buttonEl.innerText = "BUY TICKETS";
         itemEl.appendChild(buttonEl);
 

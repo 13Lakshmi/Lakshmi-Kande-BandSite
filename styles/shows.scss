@@ -174,13 +174,15 @@ body {
     background-size: cover;
     background-position: center;
 
-    &__album{
-        width:70%;
-        @include tablet{
-        width:60%;
+    &__album {
+        width: 70%;
+
+        @include tablet {
+            width: 60%;
         }
-        @include desktop{
-            width:50%;
+
+        @include desktop {
+            width: 50%;
         }
     }
 
@@ -262,6 +264,7 @@ body {
 .shows {
     @include desktop {
         display: flex;
+
     }
 
     &__subtitle-outside {
@@ -294,10 +297,17 @@ body {
             display: flex;
             width: 100%;
         }
+
     }
-    :hover{
-        color: $mercury;
+
+    &__list {
+        @include desktop {
+            :hover {
+                background-color: $alabaster;
+            }
+        }
     }
+
 
 
     &__left {
@@ -306,9 +316,10 @@ body {
             margin-top: 2.5rem;
         }
     }
-    &__right{
-        @include desktop{
-            width:73%;
+
+    &__right {
+        @include desktop {
+            width: 73%;
             margin: 3.5rem 3rem 0 0;
         }
     }
@@ -326,7 +337,7 @@ body {
         }
 
         @include desktop {
-            margin:0 0 0 7rem;
+            margin: 0 0 0 7rem;
             font-size: 2.5rem;
         }
     }
@@ -341,8 +352,8 @@ body {
             visibility: hidden;
             width: 28%;
             padding: 0;
+        }
 
-        }    
 
     }
 
@@ -359,7 +370,6 @@ body {
             line-height: 3rem;
             font-size: 0.9rem;
         }
-
 
     }
 
@@ -378,8 +388,9 @@ body {
             width: 20%;
             margin: 1rem 2rem 1rem 1rem;
         }
-        @include desktop{
-            padding:0.9rem;
+
+        @include desktop {
+            padding: 0.9rem;
             margin: 1rem 3.3rem 1rem 0;
         }
 

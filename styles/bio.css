@@ -565,6 +565,9 @@ body {
 .conversations__input:focus {
   outline-color: #323232;
 }
+.conversations__input:invalid {
+  outline-color: #D22D2D;
+}
 .conversations__textarea {
   margin-left: 0.5rem;
   padding: 0.75rem 4rem 4rem 0.75rem;
@@ -663,9 +666,11 @@ body {
   margin: 1rem 0 0 1rem;
   padding: 1rem;
   border-radius: 50%;
-  width: 4rem;
-  height: 3.5rem;
+  width: 3rem;
+  height: 3rem;
   background-color: #E1E1E1;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .conversations__item {
   display: flex;
@@ -676,11 +681,6 @@ body {
     margin-left: 2.5rem;
     flex-direction: row;
     justify-content: space-between;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .conversations__item {
-    margin-left: 1rem;
   }
 }
 .conversations__name {
