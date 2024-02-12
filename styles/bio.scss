@@ -405,8 +405,7 @@ body {
             padding-top: 3rem;
         }
     }
-
-    &__row1 {
+    &__rows {
         @include tablet {
             display: flex;
             flex-direction: row;
@@ -420,36 +419,12 @@ body {
         }
     }
 
-    &__row2 {
-        @include tablet {
-            display: flex;
-            flex-direction: row;
-            margin-left: 2rem;
-        }
+  
+    
+ 
 
-        @include desktop {
-            display: flex;
-            flex-direction: row;
-            margin-left: 7rem;
-        }
-    }
-
-    &__row3 {
-        @include tablet {
-            display: flex;
-            flex-direction: row;
-            margin-left: 2rem;
-        }
-
-        @include desktop {
-            display: flex;
-            flex-direction: row;
-            margin-left: 7rem;
-        }
-    }
 
     &__image {
-        height: 21vh;
         width: 100%;
         background-position: cover;
         background-size: center;
@@ -516,6 +491,8 @@ body {
     }
 
     &__input {
+
+
         margin-left: 0.5rem;
         padding: 0.75rem 2.8rem 0.75rem 0.75rem;
         height: 2.25rem;
@@ -532,6 +509,9 @@ body {
     }
     &__input:focus{
         outline-color: $black;
+    }
+    &__input:invalid{
+        outline-color: red;
     }
 
     &__textarea {
