@@ -37,7 +37,7 @@ const showsArray = [
 
     },
 ];
-console.table(showsArray);
+
 
 
 const section = document.querySelector("#shows");
@@ -58,6 +58,8 @@ section.appendChild(div2);
 const listEl = document.querySelector("#shows-list");
 
 div2.appendChild(listEl);
+
+
 
 function displayShows() {
 
@@ -86,6 +88,7 @@ function displayShows() {
         itemEl.classList.add("shows__item");
         listEl.appendChild(itemEl);
 
+        
 
         const headEl = document.createElement("p");
         headEl.classList.add("shows__subtitle");
@@ -134,4 +137,7 @@ function displayShows() {
 
 }
 
+
 displayShows();
+
+ document.getElementById("shows__list").addEventListener("click");

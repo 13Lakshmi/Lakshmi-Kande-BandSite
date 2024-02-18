@@ -196,7 +196,7 @@ body {
   background-image: linear-gradient(rgba(50, 50, 50, 0.7), rgba(50, 50, 50, 0.7)), url("../assets/Images/hero-bio.jpg");
   background-size: cover;
   background-position: center;
-  height: 20vh;
+  height: 25vh;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
@@ -237,29 +237,25 @@ body {
     position: absolute;
     color: #FFFFFF;
     top: 40%;
-    font-size: 3.7rem;
     font-weight: 600;
     padding-left: 6rem;
   }
 }
 
 .main__heading {
-  font-size: 1.5rem;
-  line-height: 2rem;
   padding: 1.5rem 1rem 0.2rem 1rem;
-  font-weight: Bold 700;
+  font-size: 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .main__heading {
     margin: 1.5rem 0 0.5rem 1rem;
-    font-size: 2rem;
+    font-size: 2.25rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .main__heading {
     margin: 1.5rem 0 0.5rem 6rem;
-    font-weight: 600;
-    font-size: 2rem;
+    font-size: 2.25rem;
   }
 }
 .main__picture {
@@ -285,7 +281,7 @@ body {
 }
 .main__quote {
   line-height: 1.2rem;
-  font-weight: Demi 600;
+  font-weight: 600;
   padding: 0 1rem 1rem 1rem;
 }
 @media screen and (min-width: 768px) {
@@ -301,39 +297,39 @@ body {
   }
 }
 .main__first {
-  font-size: 0.85rem;
-  font-weight: 600;
+  font-size: 0.875rem;
 }
 @media screen and (min-width: 768px) {
   .main__first {
-    font-size: 1.495rem;
     font-weight: 600;
-    line-height: 1.8rem;
+    line-height: 2rem;
+    font-size: 1.495rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .main__first {
+    font-size: 1.55rem;
   }
 }
 .main__second {
-  font-size: 0.85rem;
   padding: 0.3rem 0 0rem 0;
+  font-size: 0.8rem;
 }
 @media screen and (min-width: 768px) {
   .main__second {
-    font-size: 1rem;
     font-weight: 600;
     line-height: 2rem;
+    font-size: 1rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .main__second {
-    font-size: 0.87rem;
-    font-weight: 600;
-    line-height: 2rem;
     padding: 0.5rem 0;
+    font-size: 1rem;
   }
 }
 .main__subheading {
   font-size: 0.875rem;
-  line-height: 1.375rem;
-  font-weight: 600;
   padding: 0 1rem 1rem 1rem;
 }
 @media screen and (min-width: 768px) {
@@ -345,8 +341,6 @@ body {
 }
 @media screen and (min-width: 1280px) {
   .main__subheading {
-    font-size: 1.5rem;
-    line-height: 2rem;
     margin: 1.5rem 0 0 10.5rem;
   }
 }
@@ -364,47 +358,38 @@ body {
   }
 }
 .main__top {
-  font-size: 0.85rem;
-  line-height: 1.125rem;
-  font-weight: Regular 400;
+  font-size: 0.813rem;
 }
 @media screen and (min-width: 768px) {
   .main__top {
-    font-size: 0.91rem;
-    line-height: 1.425rem;
+    line-height: 1.375rem;
     font-weight: 400;
     padding: 0 0.4rem 0 4rem;
+    font-size: 0.875rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .main__top {
-    font-size: 0.74rem;
-    line-height: 1.425rem;
-    font-weight: 500;
     padding: 0 0.4rem 0 10.5rem;
+    font-size: 0.89rem;
   }
 }
 .main__bottom {
   margin: 1rem 0;
-  font-size: 0.84rem;
-  line-height: 1.125rem;
-  font-weight: Regular 400;
+  font-size: 0.813rem;
 }
 @media screen and (min-width: 768px) {
   .main__bottom {
     margin: 0;
-    font-size: 0.91rem;
-    line-height: 1.425rem;
+    line-height: 1.375rem;
     font-weight: 400;
+    font-size: 0.92rem;
     padding: 0 4.5rem 0 1rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .main__bottom {
-    margin: 0;
-    font-size: 0.74rem;
-    line-height: 1.425rem;
-    font-weight: 500;
+    font-size: 0.99rem;
     padding: 0 10.5rem 0 1rem;
   }
 }
@@ -416,24 +401,19 @@ body {
 }
 .gallery__subtitle {
   font-size: 1.5rem;
-  line-height: 1rem;
-  font-weight: 600;
   padding: 2rem 0 1.3rem 1rem;
 }
 @media screen and (min-width: 768px) {
   .gallery__subtitle {
     margin: 2rem 0 1rem 1rem;
-    font-size: 2.3rem;
     font-weight: 600;
+    font-size: 2.3rem;
     padding-top: 3rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .gallery__subtitle {
     margin: 2rem 0 1rem 6rem;
-    font-size: 2.3rem;
-    font-weight: 600;
-    padding-top: 3rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -445,8 +425,6 @@ body {
 }
 @media screen and (min-width: 1280px) {
   .gallery__row1 {
-    display: flex;
-    flex-direction: row;
     margin-left: 7rem;
   }
 }
@@ -459,8 +437,6 @@ body {
 }
 @media screen and (min-width: 1280px) {
   .gallery__row2 {
-    display: flex;
-    flex-direction: row;
     margin-left: 7rem;
   }
 }
@@ -473,8 +449,6 @@ body {
 }
 @media screen and (min-width: 1280px) {
   .gallery__row3 {
-    display: flex;
-    flex-direction: row;
     margin-left: 7rem;
   }
 }
@@ -502,6 +476,7 @@ body {
 
 .conversations__heading {
   padding: 2rem 0 0.5rem 1rem;
+  font-size: 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .conversations__heading {
@@ -609,7 +584,6 @@ body {
   border: 1px solid #323232;
   border-radius: 0.25rem;
   font-size: 1rem;
-  font-weight: 700;
   margin: 1rem 0 1rem 0.5rem;
 }
 @media screen and (min-width: 768px) {
@@ -713,6 +687,9 @@ body {
     padding-left: 1rem;
   }
 }
+.conversations__fulltext {
+  width: 100%;
+}
 .conversations__comment {
   font-size: 0.75rem;
   font-weight: 600;
@@ -736,8 +713,6 @@ body {
   color: #FFFFFF;
   padding: 1rem 0 1rem 1rem;
   font-size: 0.8rem;
-  line-height: 1.125rem;
-  font-weight: 400;
   margin-top: 2rem;
 }
 @media screen and (min-width: 768px) {
@@ -772,7 +747,6 @@ body {
 }
 @media screen and (min-width: 1280px) {
   .footer__chat {
-    font-size: 2.45rem;
     font-weight: 600;
     margin-left: 1rem;
     padding: 0.5rem 1.5rem 0 0;
@@ -781,6 +755,7 @@ body {
 @media screen and (min-width: 768px) {
   .footer__icons {
     display: flex;
+    padding-top: 1rem;
   }
 }
 .footer__icon {
@@ -875,10 +850,6 @@ body {
   color: #FFFFFF;
   line-height: 4rem;
 }
-.footer__name {
-  margin: 2rem 0 1rem 0;
-  font-size: 1.6rem;
-}
 .footer__copyrights {
   font-size: 0.68rem;
 }
@@ -891,8 +862,6 @@ body {
 }
 @media screen and (min-width: 1280px) {
   .footer__copyrights {
-    margin-left: 1rem;
-    font-size: 0.73rem;
-    padding: 1rem 0 2rem 0;
+    font-size: 0.75rem;
   }
 }/*# sourceMappingURL=bio.css.map */
