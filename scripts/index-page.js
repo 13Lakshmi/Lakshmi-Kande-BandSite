@@ -1,4 +1,4 @@
-const apiKey = "c90fd532-ac02-4468-a1a8-b44370cf2b91";
+const apiKey = "c90fd532-ac02-4468-a1a8-b44380cf2b91";
 
 import BandSiteApi from "./band-site-api.js";
 
@@ -71,9 +71,6 @@ formEl.addEventListener("submit", async function (event) {
     event.preventDefault();
 
 
-    //console.log(event.target.conversationname.value);
-    //console.log(event.target.comment.value);
-
     const fullName = event.target.conversationname.value;
     const fullComment = event.target.comment.value;
 
@@ -81,12 +78,11 @@ formEl.addEventListener("submit", async function (event) {
     const newConversation = {
         name: fullName,
         comment: fullComment,
-        // timestamp: Date.now(),
+       
     };
 
-    //conversationsArray.unshift(newConversation);
     const response = await bandApi.postComments(newConversation);
-    //console.log(response);
+   
 
 
 
@@ -99,4 +95,4 @@ formEl.addEventListener("submit", async function (event) {
 });
 
 const response = await bandApi.getShows();
-//console.log(response);
+

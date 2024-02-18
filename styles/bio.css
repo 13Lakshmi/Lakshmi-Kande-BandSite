@@ -222,6 +222,8 @@ body {
   padding-left: 1rem;
   margin: 0;
   font-size: 1.46rem;
+  line-height: 1.375rem;
+  font-weight: 600;
 }
 @media screen and (min-width: 768px) {
   .hero__text {
@@ -229,6 +231,8 @@ body {
     color: #FFFFFF;
     top: 44%;
     font-size: 3.7rem;
+    line-height: 1.375rem;
+    font-weight: 600;
     padding-left: 2rem;
   }
 }
@@ -245,17 +249,23 @@ body {
 .main__heading {
   padding: 1.5rem 1rem 0.2rem 1rem;
   font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
 }
 @media screen and (min-width: 768px) {
   .main__heading {
     margin: 1.5rem 0 0.5rem 1rem;
     font-size: 2.25rem;
+    line-height: 2rem;
+    font-weight: 700;
   }
 }
 @media screen and (min-width: 1280px) {
   .main__heading {
     margin: 1.5rem 0 0.5rem 6rem;
     font-size: 2.25rem;
+    line-height: 2rem;
+    font-weight: 700;
   }
 }
 .main__picture {
@@ -298,44 +308,52 @@ body {
 }
 .main__first {
   font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-weight: 600;
 }
 @media screen and (min-width: 768px) {
   .main__first {
-    font-weight: 600;
-    line-height: 2rem;
     font-size: 1.495rem;
+    line-height: 2rem;
+    font-weight: 600;
   }
 }
 @media screen and (min-width: 1280px) {
   .main__first {
     font-size: 1.55rem;
+    line-height: 2rem;
+    font-weight: 600;
   }
 }
 .main__second {
   padding: 0.3rem 0 0rem 0;
   font-size: 0.8rem;
+  line-height: 1.375rem;
+  font-weight: 600;
 }
 @media screen and (min-width: 768px) {
   .main__second {
-    font-weight: 600;
-    line-height: 2rem;
     font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 600;
   }
 }
 @media screen and (min-width: 1280px) {
   .main__second {
     padding: 0.5rem 0;
-    font-size: 1rem;
   }
 }
 .main__subheading {
   font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-weight: 600;
   padding: 0 1rem 1rem 1rem;
 }
 @media screen and (min-width: 768px) {
   .main__subheading {
     font-size: 1.5rem;
     line-height: 2rem;
+    font-weight: 600;
     margin: 2rem 0 0 4rem;
   }
 }
@@ -359,37 +377,45 @@ body {
 }
 .main__top {
   font-size: 0.813rem;
+  line-height: 1.125rem;
+  font-weight: 400;
 }
 @media screen and (min-width: 768px) {
   .main__top {
-    line-height: 1.375rem;
-    font-weight: 400;
     padding: 0 0.4rem 0 4rem;
-    font-size: 0.875rem;
+    font-size: 0.87rem;
+    line-height: 1.375;
+    font-weight: 400;
   }
 }
 @media screen and (min-width: 1280px) {
   .main__top {
     padding: 0 0.4rem 0 10.5rem;
     font-size: 0.89rem;
+    line-height: 1.125rem;
+    font-weight: 400;
   }
 }
 .main__bottom {
   margin: 1rem 0;
   font-size: 0.813rem;
+  line-height: 1.125rem;
+  font-weight: 400;
 }
 @media screen and (min-width: 768px) {
   .main__bottom {
     margin: 0;
-    line-height: 1.375rem;
-    font-weight: 400;
     font-size: 0.92rem;
+    line-height: 1.375;
+    font-weight: 400;
     padding: 0 4.5rem 0 1rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .main__bottom {
     font-size: 0.99rem;
+    line-height: 1.125rem;
+    font-weight: 400;
     padding: 0 10.5rem 0 1rem;
   }
 }
@@ -401,13 +427,16 @@ body {
 }
 .gallery__subtitle {
   font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
   padding: 2rem 0 1.3rem 1rem;
 }
 @media screen and (min-width: 768px) {
   .gallery__subtitle {
     margin: 2rem 0 1rem 1rem;
-    font-weight: 600;
     font-size: 2.3rem;
+    line-height: 0;
+    font-weight: 600;
     padding-top: 3rem;
   }
 }
@@ -477,17 +506,23 @@ body {
 .conversations__heading {
   padding: 2rem 0 0.5rem 1rem;
   font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
 }
 @media screen and (min-width: 768px) {
   .conversations__heading {
     padding: 3rem 0 1rem 2rem;
     font-size: 2.3rem;
+    line-height: 2rem;
+    font-weight: 700;
   }
 }
 @media screen and (min-width: 1280px) {
   .conversations__heading {
     padding: 3rem 0 1rem 7rem;
     font-size: 2.5rem;
+    line-height: 2rem;
+    font-weight: 700;
   }
 }
 .conversations__form {
@@ -584,6 +619,8 @@ body {
   border: 1px solid #323232;
   border-radius: 0.25rem;
   font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 700;
   margin: 1rem 0 1rem 0.5rem;
 }
 @media screen and (min-width: 768px) {
@@ -713,16 +750,22 @@ body {
   color: #FFFFFF;
   padding: 1rem 0 1rem 1rem;
   font-size: 0.8rem;
+  line-height: 1.125rem;
+  font-weight: 400;
   margin-top: 2rem;
 }
 @media screen and (min-width: 768px) {
   .footer {
     font-size: 0.9rem;
+    line-height: 1.125rem;
+    font-weight: 400;
   }
 }
 @media screen and (min-width: 1280px) {
   .footer {
     font-size: 0.9rem;
+    line-height: 1.125rem;
+    font-weight: 400;
     padding: 1rem 0 1rem 6rem;
   }
 }
@@ -736,10 +779,14 @@ body {
 }
 .footer__chat {
   font-size: 1.5rem;
+  line-height: 1.125rem;
+  font-weight: 400;
 }
 @media screen and (min-width: 768px) {
   .footer__chat {
     font-size: 2.45rem;
+    line-height: 1.125rem;
+    font-weight: 400;
     font-weight: 600;
     margin-left: 1rem;
     padding: 0.5rem 0 0 0;
@@ -852,16 +899,22 @@ body {
 }
 .footer__copyrights {
   font-size: 0.68rem;
+  line-height: 1.125rem;
+  font-weight: 400;
 }
 @media screen and (min-width: 768px) {
   .footer__copyrights {
     margin-left: 1rem;
     font-size: 0.9rem;
+    line-height: 1.125rem;
+    font-weight: 400;
     padding: 1rem 0 2rem 0;
   }
 }
 @media screen and (min-width: 1280px) {
   .footer__copyrights {
     font-size: 0.75rem;
+    line-height: 1.125rem;
+    font-weight: 400;
   }
 }/*# sourceMappingURL=bio.css.map */

@@ -8,7 +8,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    // border: 1px dotted red;
 }
 
 body {
@@ -277,14 +276,12 @@ body {
         @include subHeader;
 
         @include tablet {
-            font-weight: 600;
-            line-height: 2rem;
-            @include subHeader(1.495rem);
+            @include subHeader(1.495rem,2rem,600);
 
         }
 
         @include desktop {
-            @include subHeader(1.55rem);
+            @include subHeader(1.55rem,2rem,600);
 
         }
     }
@@ -294,14 +291,11 @@ body {
         @include subHeader(0.8rem);
 
         @include tablet {
-            font-weight: 600;
-            line-height: 2rem;
-            @include subHeader(1rem);
+            @include subHeader(1rem,2rem,600);
         }
 
         @include desktop {
             padding: 0.5rem 0;
-            @include subHeader(1rem);
         }
     }
 
@@ -310,8 +304,7 @@ body {
         padding: 0 1rem 1rem 1rem;
 
         @include tablet {
-            @include subHeader(1.5rem);
-            line-height: 2rem;
+            @include subHeader(1.5rem,2rem);
             margin: 2rem 0 0 4rem;
         }
 
@@ -336,10 +329,8 @@ body {
         @include bodyCopy;
 
         @include tablet {
-            line-height: 1.375rem;
-            font-weight: 400;
             padding: 0 0.4rem 0 4rem;
-            @include bodyCopy(0.875rem);
+            @include bodyCopy(0.87rem,1.375,400);
         }
 
         @include desktop {
@@ -354,9 +345,7 @@ body {
 
         @include tablet {
             margin: 0;
-            line-height: 1.375rem;
-            font-weight: 400;
-            @include bodyCopy(0.92rem);
+            @include bodyCopy(0.92rem,1.375,400);
             padding: 0 4.5rem 0 1rem;
         }
 
@@ -378,8 +367,7 @@ body {
 
         @include tablet {
             margin: 2rem 0 1rem 1rem;
-            font-weight: 600;
-            @include sectionHeader(2.3rem);
+            @include sectionHeader(2.3rem,0,600);
             padding-top: 3rem;
         }
 
@@ -681,10 +669,7 @@ body {
         }
     }
 
-
 }
-
-
 
 .footer {
     background-color: $black;
