@@ -1,44 +1,14 @@
+const apiKey = "c90fd532-ac02-4468-a1a8-b44380cf2b91";
 
-const showsArray = [
-    {
-        DATE: "Mon Sept 09 2024",
-        VENUE: "Ronald Lane",
-        LOCATION: "San Francisco, CA",
-
-    },
-    {
-        DATE: "Tue Sept 17 2024",
-        VENUE: "Pier 3 East",
-        LOCATION: "San Francisco, CA",
-
-    },
-    {
-        DATE: "Sat Oct 12 2024",
-        VENUE: "View Lounge",
-        LOCATION: "San Francisco, CA",
-
-    },
-    {
-        DATE: "Sat Nov 16 2024",
-        VENUE: "Hyatt Agency",
-        LOCATION: "San Francisco, CA",
-
-    },
-    {
-        DATE: "Fri Nov 29 2024",
-        VENUE: "Moscow Center",
-        LOCATION: "San Francisco, CA",
-
-    },
-    {
-        DATE: "Wed Dec 18 2024",
-        VENUE: "Press Club",
-        LOCATION: "San Francisco, CA",
-
-    },
-];
+import BandSiteApi from "./band-site-api.js";
 
 
+const bandApi = new BandSiteApi(apiKey);
+
+const response = await bandApi.getShows();
+console.log(response);
+const showsArray = response.data;
+console.log(showsArray);
 
 const section = document.querySelector("#shows");
 const div1 = document.createElement("div");
@@ -61,7 +31,7 @@ div2.appendChild(listEl);
 
 
 
-function displayShows() {
+ function displayShows() {
 
     const subtitle = document.createElement("li");
     subtitle.classList.add("shows__subtitle-format");
@@ -92,35 +62,36 @@ function displayShows() {
 
         const headEl = document.createElement("p");
         headEl.classList.add("shows__subtitle");
-        headEl.innerText = "DATE";
+        headEl.innerText = "date";
         itemEl.appendChild(headEl);
 
         const head1El = document.createElement("p");
         head1El.classList.add("shows__subtitle");
-        head1El.innerText = "VENUE";
+        head1El.innerText = "place";
         itemEl.appendChild(head1El);
 
         const head2El = document.createElement("p");
         head2El.classList.add("shows__subtitle");
-        head2El.innerText = "LOCATION";
+        head2El.innerText = "location";
         itemEl.appendChild(head2El);
 
 
         const dateEl = document.createElement("p");
         dateEl.classList.add("shows__detail");
-        dateEl.innerText = showsArray[i].DATE;
+        const timestamp = new Date(showsArray[i].date);
+        dateEl.innerText = timestamp.toLocaleDateString();
         headEl.appendChild(dateEl);
 
         const venueEl = document.createElement("p");
         venueEl.classList.add("shows__detail");
-        venueEl.innerText = showsArray[i].VENUE;
+        venueEl.innerText = showsArray[i].place;
         head1El.appendChild(venueEl);
 
 
 
         const locationEl = document.createElement("p");
         locationEl.classList.add("shows__detail");
-        locationEl.innerText = showsArray[i].LOCATION;
+        locationEl.innerText = showsArray[i].location;
         head2El.appendChild(locationEl);
 
         const buttonEl = document.createElement("button");
@@ -138,6 +109,5 @@ function displayShows() {
 }
 
 
-displayShows();
+ displayShows();
 
- document.getElementById("shows__list").addEventListener("click");

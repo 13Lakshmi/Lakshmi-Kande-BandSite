@@ -94,5 +94,5 @@ formEl.addEventListener("submit", async function (event) {
 
 });
 
-const response = await bandApi.getShows();
+
 
