@@ -391,7 +391,7 @@ body {
 @media screen and (min-width: 1280px) {
   .main__top {
     padding: 0 0.4rem 0 10.5rem;
-    font-size: 0.89rem;
+    font-size: 0.9rem;
     line-height: 1.125rem;
     font-weight: 400;
   }
@@ -689,7 +689,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .conversations__item {
-    margin-left: 2.5rem;
+    margin-left: 1.5rem;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -728,14 +728,14 @@ body {
   width: 100%;
 }
 .conversations__comment {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 600;
   line-height: 1rem;
   padding: 0 0 1rem 1rem;
 }
 @media screen and (min-width: 768px) {
   .conversations__comment {
-    font-size: 0.98rem;
+    font-size: 0.96rem;
     line-height: 1.5rem;
   }
 }
@@ -802,7 +802,6 @@ body {
 @media screen and (min-width: 768px) {
   .footer__icons {
     display: flex;
-    padding-top: 1rem;
   }
 }
 .footer__icon {

@@ -31,7 +31,7 @@ div2.appendChild(listEl);
 
 
 
- function displayShows() {
+function displayShows() {
 
     const subtitle = document.createElement("li");
     subtitle.classList.add("shows__subtitle-format");
@@ -58,21 +58,21 @@ div2.appendChild(listEl);
         itemEl.classList.add("shows__item");
         listEl.appendChild(itemEl);
 
-        
+
 
         const headEl = document.createElement("p");
         headEl.classList.add("shows__subtitle");
-        headEl.innerText = "date";
+        headEl.innerText = "DATE";
         itemEl.appendChild(headEl);
 
         const head1El = document.createElement("p");
         head1El.classList.add("shows__subtitle");
-        head1El.innerText = "place";
+        head1El.innerText = "PLACE";
         itemEl.appendChild(head1El);
 
         const head2El = document.createElement("p");
         head2El.classList.add("shows__subtitle");
-        head2El.innerText = "location";
+        head2El.innerText = "LOCATION";
         itemEl.appendChild(head2El);
 
 
@@ -109,5 +109,5 @@ div2.appendChild(listEl);
 }
 
 
- displayShows();
+displayShows();
 

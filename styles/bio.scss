@@ -276,12 +276,12 @@ body {
         @include subHeader;
 
         @include tablet {
-            @include subHeader(1.495rem,2rem,600);
+            @include subHeader(1.495rem, 2rem, 600);
 
         }
 
         @include desktop {
-            @include subHeader(1.55rem,2rem,600);
+            @include subHeader(1.55rem, 2rem, 600);
 
         }
     }
@@ -291,7 +291,7 @@ body {
         @include subHeader(0.8rem);
 
         @include tablet {
-            @include subHeader(1rem,2rem,600);
+            @include subHeader(1rem, 2rem, 600);
         }
 
         @include desktop {
@@ -304,7 +304,7 @@ body {
         padding: 0 1rem 1rem 1rem;
 
         @include tablet {
-            @include subHeader(1.5rem,2rem);
+            @include subHeader(1.5rem, 2rem);
             margin: 2rem 0 0 4rem;
         }
 
@@ -330,12 +330,12 @@ body {
 
         @include tablet {
             padding: 0 0.4rem 0 4rem;
-            @include bodyCopy(0.87rem,1.375,400);
+            @include bodyCopy(0.87rem, 1.375, 400);
         }
 
         @include desktop {
             padding: 0 0.4rem 0 10.5rem;
-            @include bodyCopy(0.89rem);
+            @include bodyCopy(0.9rem);
         }
     }
 
@@ -345,7 +345,7 @@ body {
 
         @include tablet {
             margin: 0;
-            @include bodyCopy(0.92rem,1.375,400);
+            @include bodyCopy(0.92rem, 1.375, 400);
             padding: 0 4.5rem 0 1rem;
         }
 
@@ -367,7 +367,7 @@ body {
 
         @include tablet {
             margin: 2rem 0 1rem 1rem;
-            @include sectionHeader(2.3rem,0,600);
+            @include sectionHeader(2.3rem, 0, 600);
             padding-top: 3rem;
         }
 
@@ -611,7 +611,7 @@ body {
         width: 90%;
 
         @include tablet {
-            margin-left: 2.5rem;
+            margin-left: 1.5rem;
             flex-direction: row;
             justify-content: space-between;
         }
@@ -654,13 +654,13 @@ body {
     }
 
     &__comment {
-        font-size: 0.75rem;
+        font-size: 0.7rem;
         font-weight: 600;
         line-height: 1rem;
         padding: 0 0 1rem 1rem;
 
         @include tablet {
-            font-size: 0.98rem;
+            font-size: 0.96rem;
             line-height: 1.5rem;
         }
 
@@ -716,7 +716,6 @@ body {
     &__icons {
         @include tablet {
             display: flex;
-            padding-top: 1rem;
         }
     }
 

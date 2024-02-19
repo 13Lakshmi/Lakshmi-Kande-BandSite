@@ -78,11 +78,11 @@ formEl.addEventListener("submit", async function (event) {
     const newConversation = {
         name: fullName,
         comment: fullComment,
-       
+
     };
 
     const response = await bandApi.postComments(newConversation);
-   
+
 
 
 

@@ -7,7 +7,7 @@ class BandSiteApi {
     async getComments() {
         try {
             const response = await axios.get(`${this.baseUrl}comments?api_key=${this.apiKey}`);
-            let response1=response.data
+            let response1 = response.data
             response1.sort((a, b) => b.timestamp - a.timestamp);
             return response1;
         }
@@ -20,7 +20,7 @@ class BandSiteApi {
 
     async postComments(newConversation) {
         try {
-            const response = await axios.post(`${this.baseUrl}comments?api_key=${this.apiKey}`,newConversation);
+            const response = await axios.post(`${this.baseUrl}comments?api_key=${this.apiKey}`, newConversation);
             return response;
         } catch (e) {
             console.log("error:", e);
@@ -28,14 +28,14 @@ class BandSiteApi {
     }
 
 
-async getShows(){
-    try{
-        const response = await axios.get(`${this.baseUrl}showdates?api_key=${this.apiKey}`);
-        return response;
-    } catch(e){
-        console.log("error:", e);
+    async getShows() {
+        try {
+            const response = await axios.get(`${this.baseUrl}showdates?api_key=${this.apiKey}`);
+            return response;
+        } catch (e) {
+            console.log("error:", e);
+        }
     }
-}
 
 }
 

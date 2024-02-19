@@ -297,18 +297,17 @@ body {
             display: flex;
             width: 100%;
         }
-
     }
 
     &__list {
-        @include desktop {
-            :hover {
-                background-color: $alabaster;
-            }
+        :hover {
+            background-color: $alabaster;
+        }
+
+        :active {
+            background-color: $mercury;
         }
     }
-
-
 
     &__left {
         @include desktop {
@@ -393,7 +392,6 @@ body {
             padding: 0.9rem;
             margin: 1rem 3.3rem 1rem 0;
         }
-
     }
 
     &__divider {
@@ -405,9 +403,7 @@ body {
             width: 95%;
 
         }
-
     }
-
 }
 
 

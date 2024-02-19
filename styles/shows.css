@@ -310,10 +310,11 @@ body {
     width: 100%;
   }
 }
-@media screen and (min-width: 1280px) {
-  .shows__list :hover {
-    background-color: #FAFAFA;
-  }
+.shows__list :hover {
+  background-color: #FAFAFA;
+}
+.shows__list :active {
+  background-color: #E1E1E1;
 }
 @media screen and (min-width: 1280px) {
   .shows__left {
